@@ -36,6 +36,10 @@ p{
 	padding-top: 10px;
 }
 
+b{
+	font-weight: bold;
+}
+
 /* Header start */
 .header {
 	padding: 20px;
