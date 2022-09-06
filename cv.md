@@ -49,4 +49,4 @@ function rgb(r, g, b) {
 
 ## Languages
 - Russian - native speaker
-- English - [A2](/busuu_cert_A2.pdf)
+- English - [A2](/img/busuu_cert_A2.pdf)
