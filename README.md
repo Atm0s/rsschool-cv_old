@@ -1,1 +1,2 @@
-# rsschool-cv
+- [Markdown & Git](https://atm0s.github.io/rsschool-cv/cv)
+- [HTML, CSS & Git Basics](https://atm0s.github.io/rsschool-cv/)
