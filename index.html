@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CV</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/favicon.ico">
+</head>
+
+<body>
+	<!-- Header start -->
+	<header class="container header">
+		<nav class="header__nav">
+			<ul class="header__list">
+				<li class="header__li"><a href="#contacts" class="header__link">Contacts</a></li>
+				<li class="header__li"><a href="#about-me" class="header__link">About me</a></li>
+				<li class="header__li"><a href="#skills" class="header__link">Skills</a></li>
+				<li class="header__li"><a href="#code" class="header__link">Code</a></li>
+				<li class="header__li"><a href="#projects" class="header__link">Projects</a></li>
+				<li class="header__li"><a href="#education" class="header__link">Education</a></li>
+				<li class="header__li"><a href="#lang" class="header__link">Languages</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Header end -->
+
+	<!-- Main section start -->
+	<main class="container main">
+
+		<h1 class="main-title">Vadim Nikitchuk</h1>
+		<h2 class="section__subtitle">FrontEnd Developer</h2>
+
+		<div class="section contacts-wrapper" id="contacts">
+			<figure class="image-wrapper">
+				<img src="img/photo300.jpg" alt="cv-photo" class="image-item" width="200">
+			</figure>
+			<section class="contacts">
+				<h2 class="section__header">Contacts</h2>
+				<ul class="section-list">
+					<li>Tel: <a href="tel:+7(963)977-94-57" class="contacts__link">+7&nbsp;(963)&nbsp;977&#8209;94&#8209;57</a></li>
+					<li>Email: <a href="mailto:atm0s84@gmail.com" class="contacts__link">atm0s84@gmail.com</a></li>
+					<li>GitHub: <a href="https://github.com/Atm0s" class="contacts__link">Atm0s</a></li>
+					<li>Telegram: <a href="https://t.me/Atm0zz" class="contacts__link">@Atm0zz</a></li>
+				</ul>
+			</section>
+		</div>
+
+		<section class="section" id="about-me">
+			<h2 class="section__header">About me</h2>
+			<p class="section__desc">Hello! Most of my life I worked as a system administrator. But two years ago I decided to change my life and I started to learn FrontEnd Development.</p>
+			<p class="section__desc">I enjoy learning and developing new things and skills that can improve quality of my life and other people ones. I think I have good interpersonal skills. I am reliable and dependable and often seek new responsibilities within a wide range of employment areas.</p>
+		</section>
+
+		<section class="section" id="skills">
+			<h2 class="section__header">Skills</h2>
+			<ul class="section-list">
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Git</li>
+				<li>JavaScript (<a href="https://www.codewars.com/users/Atm0s/stats" class="contacts__link">codewars.comprofile</a>)</li>
+			</ul>
+		</section>
+
+		<section class="section" id="code">
+			<h2 class="section__header">Code</h2>
+			<p class="section__desc"><b>Codewars KATA:</b> Complete rgb function so that passing in RGB decimal values will result in a hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value.</p>
+			<pre>
+<code>
+function rgb(r, g, b) {
+	let result = [];
+	let a = 0
+	for (val in arguments) {
+		if (arguments[val] &gt; 255) (a = 255);
+		else if (arguments[val] &lt; 0) (a = 0);
+		else (a = arguments[val])
+		if (a.toString(16).length === 1) (a = '0' + a.toString(16))
+		result.push(a.toString(16))
+	}
+	return result.join('').toUpperCase()
+}</code>
+			</pre>
+		</section>
+
+		<section class="section" id="projects">
+			<h2 class="section__header">Projects</h2>
+			<ul class="section-list">
+				<li><a href="https://github.com/Atm0s/rsschool-cv/tree/rsschool-cv-html" class="contacts__link">This CV</a></li>
+				<li><a href="https://rolling-scopes-school.github.io/atm0s-JSFEPRESCHOOL/portfolio/" class="contacts__link">Portfolio</a></li>
+				<li><a href="https://rolling-scopes-school.github.io/atm0s-JSFEPRESCHOOL/image-gallery/" class="contacts__link">Image Gallery</a></li>
+			</ul>
+		</section>
+
+		<section class="section" id="education">
+			<h2 class="section__header">Education</h2>
+			<ul class="section-list">
+				<li>Russian State University of Tourism and Service (RSUTS)</li>
+				<li>Rolling Scope School</li>
+				<li>CS50 lectures</li>
+				<li>HTML Academy</li>
+			</ul>
+		</section>
+
+		<section class="section" id="lang">
+			<h2 class="section__header">Languages</h2>
+			<ul class="section-list">
+				<li>Russian - native speaker</li>
+				<li><a href="img/busuu_cert_A2.pdf" class="contacts__link">English - A2-B1</a></li>
+			</ul>
+		</section>
+	</main>
+	<!-- Main section end -->
+
+	<!-- Footer start -->
+	<footer class="container footer">
+		<a href="https://rs.school/js/" class="footer__link"><img src="img/rss.svg" alt="RSSchool" class="footer__logo" width="100"></a>
+		<p class="footer__copyright">Copyright<time datetime="2021-12-27" class="footer__copyright">&nbsp;2022</time></p>
+		<a href="https://github.com/Atm0s" class="footer__link"><img src="img/github-ico.png" alt="GitHub" class="footer__logo">&nbsp;Atm0s</a>
+	</footer>
+	<!-- Footer end -->
+
+</body>
+
+</html>
